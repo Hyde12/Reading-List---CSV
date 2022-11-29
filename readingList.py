@@ -76,7 +76,7 @@ while True:
         author = addedBook["author"]
         releaseDate = addedBook["releaseDate"]
 
-        with open("books.csv", "w") as bookData:
+        with open("books.csv", "a") as bookData:
             title, author, releaseDate = addedBook.values()
             bookData.write(",".join(addedBook.values()) + "\n")
     elif option == "2":
